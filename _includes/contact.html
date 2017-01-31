@@ -1,7 +1,13 @@
 <footer>
 	<ul class="icons">
-		<li><a href="#" class="fa-twitter">Twitter</a></li>
-		<li><a href="#" class="fa-instagram">Instagram</a></li>
-		<li><a href="#" class="fa-facebook">Facebook</a></li>
+		{% if site.twitter %}
+		<li><a href="https://twitter.com/{{ site.twitter }}" class="fa-twitter">Twitter</a></li>
+		{% endif %}
+		{% if site.instagram %}
+		<li><a href="https://www.instagram.com/{{ site.instagram }}" class="fa-instagram">Instagram</a></li>
+		{% endif %}
+		{% if site.facebook %}
+		<li><a href="https://www.facebook.com/{{ site.facebook }}" class="fa-facebook">Facebook</a></li>
+		{% endif %}
 	</ul>
 </footer>
